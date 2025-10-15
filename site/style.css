@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Jura:wght@300..700&display=swap');
+
+h1 {
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Josefin Slab', sans-serif;
+}
+
+/* Define a imagem de fundo para todo o corpo da página */
+.pt-0 {
+    background-image: url('imagens/livingaround.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    min-height: 100vh;
+    /* ocupa toda a altura da viewport */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Faz a navbar aparecer sobre a imagem */
+header {
+    position: relative;
+    z-index: 2;
+}
+
+/* Adiciona algum contraste à navbar, se necessário */
+.nav-masthead .nav-link {
+    color: black;
+    /* deixa os links visíveis sobre a imagem */
+}
+
+.pt-2 {
+    background-color:rgba(180, 155, 44, 0.25);
+    background-size: cover;
+    background-position: center;
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Jura', sans-serif;
+    border: black;
+}
+
+.c1 {
+       font-size: 43px;
+       padding: 100px;
+}
+
+.c2 {
+       font-size: 30px;
+       font-weight: bold;
+       padding: 50px;
+}
+
+
+#div-trab{
+     font-size: 20px;
+    font-weight: bold;
+    list-style-type: none;
+    padding: 50px;
+    --b: 5px; /* thickness of the border */
+    --c: black; /* color of the border */
+    --w: 20px; /* width of border */
+ 
+    border: var(--b) solid #0000; /* space for the border */
+    --_g: #0000 90deg, var(--c) 0;
+    --_p: var(--w) var(--w) border-box no-repeat;
+ 
+    background: conic-gradient(
+                from 90deg at top var(--b) left var(--b),
+                var(--_g)
+            )
+            0 0 / var(--_p),
+        conic-gradient(from -90deg at bottom var(--b) right var(--b), var(--_g))
+            100% 100% / var(--_p);
+}
+
+.pt-3 {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
