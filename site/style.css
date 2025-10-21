@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Jura:wght@300..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
-h1 {
+.pt-0 h1 {
     background-size: cover;
     background-position: center;
     min-height: 100vh;
@@ -9,8 +9,12 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: 'Josefin Slab', sans-serif;
+    font-family: 'Josefin Slab', serif; /* fonte correta */
+    font-size: 85px;
+    font-weight: bold;
+    text-align: center; /* opcional, mas ajuda no alinhamento */
 }
+
 
 /* Define a imagem de fundo para todo o corpo da página */
 .pt-0 {
@@ -25,6 +29,51 @@ h1 {
     flex-direction: column;
 }
 
+.pt-0contatos {
+    background-image: url('imagens/pexels-jeremy-bishop-1260133-20146347\ 2.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    min-height: 100vh;
+    /* ocupa toda a altura da viewport */
+    display: flex;
+    flex-direction: column;
+}
+
+.contato-page .navbar .nav-link {
+    color: white !important; /* letras brancas */
+}
+
+body {
+  font-family: 'JURA', sans-serif;
+  font-size: 20px;
+  font-family: bold;
+}
+
+.form-control {
+  background-color: #fff;
+  border: none;
+  padding: 50%px;
+}
+
+.form-control:focus {
+  box-shadow: none;
+  border: 1px solid #ccc;
+}
+
+.form-box {
+    width: 467px;
+    height: 700px;
+    background-color: black; /* quadrado preto */
+    border-radius: 30px;     /* bordas arredondadas */
+    position: absolute;      /* para usar top/left */
+    top: 207px;
+    left: 187px;
+    opacity: 1;              /* totalmente visível */
+    transform: rotate(0deg); /* ângulo, opcional aqui */
+}
+
 /* Faz a navbar aparecer sobre a imagem */
 header {
     position: relative;
@@ -36,6 +85,37 @@ header {
     color: black;
     /* deixa os links visíveis sobre a imagem */
 }
+
+/* Mantém navbar sobre a imagem */
+.navbar {
+    background-color: transparent; /* transparente */
+    padding: 1rem 0;
+}
+
+/* Links pretos sobre a imagem */
+.navbar .nav-link {
+    font-family: 'Jura', sans-serif; /* fonte */
+    font-weight: 700;                /* negrito */
+    font-size: 25px;                 /* tamanho */
+    letter-spacing: 0;               /* sem espaçamento extra */
+    color: black;                    /* preto sobre a imagem */
+    margin-left: 20px;               /* espaço entre os links */
+}
+
+/* Hover dos links */
+.navbar .nav-link:hover {
+    color: #555;
+}
+
+/* Ícone do hambúrguer (mobile) */
+.navbar-toggler {
+    border-color: black;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='black' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/ %3e%3c/svg%3e");
+}
+
 
 .pt-2 {
     background-color: rgba(180, 155, 44, 0.25);
@@ -102,6 +182,7 @@ header {
     font-family: 'Jura', sans-serif;
     font-size: 30px;
     font-weight: bold;
+    position: relative;
 }
 
 .text-sec4 {
@@ -115,6 +196,7 @@ header {
     font-family: 'Jura', sans-serif;
     font-size: 30px;
     font-weight: bold;
+    position: relative;
 }
 
 #btn-1 {
@@ -157,4 +239,74 @@ header {
     font-family: 'Jura', sans-serif;
     font-weight: bold;
     font-size: 25px;
+}
+
+.btn-seta {
+  position: absolute;
+  right: -40%;
+  bottom: -25%;
+  min-height: 50%;
+}
+
+.btn-seta1 {
+  position: absolute;
+  right: 42%;
+  bottom: -25%;
+  min-height: 50%;
+}
+
+.footer {
+    background-color: black;
+    background-size: cover;
+    background-position: center;
+    min-height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* separação de containers internos */
+.footer-text h3{
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-family: 'Jura', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 10px;
+    transform: translateY(-30px);
+}
+
+.footer-buttons{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1;
+}
+
+.footer-buttons .btn img {
+    width: 58px;
+    height: 57px;
+    object-fit: cover;
+    transform: translateY(-20px);
+}
+
+.footer-buttons .btn {
+    border: none;
+    background: transparent;
+    transition: transform 0.3s ease;
+}
+
+.footer-buttons .btn:hover {
+    transform: scale(1.1);
+}
+
+.footer-text2 h4{
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-family: 'Jura', sans-serif;
+    font-size: 15px;
+    margin-top: 5px;
+    transform: translateY(15px);
 }

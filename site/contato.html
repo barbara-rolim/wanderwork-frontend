@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contatos</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body class="contato-page">
+    <div class="pt-0contatos">
+        <header>
+            <nav class="navbar navbar-expand-md position-relative">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="imagens/lines-leaning-solid 1.png" alt="Logo" height="50">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item"><a class="nav-link active" href="#">ACOMODAÇAO</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">LOCAIS</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">BLOG</a></li>
+                            <li class="nav-item"><a class="nav-link" href="contato.html">CONTATOS</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!--- Formulario --->
+        <div class="d-flex justify-content-start align-items-center vh-100"
+            style="background: url('imagem-de-fundo.jpg') center center/cover no-repeat;">
+            <div class="bg-dark text-white p-4 rounded-4 shadow-lg"
+                style="width: 320px; margin-left: 100px; opacity: 0.95;">
+                <form>
+                    <div class="mb-3">
+                        <label for="inputNome" class="form-label">Nome:</label>
+                        <input type="text" class="form-control rounded-3" id="inputNome" placeholder="Nome Apelido">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="inputEmail" class="form-label">Email:</label>
+                        <input type="email" class="form-control rounded-3" id="inputEmail"
+                            placeholder="nome@exemplo.com">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="inputMensagem" class="form-label">Mensagem:</label>
+                        <textarea class="form-control rounded-3" id="inputMensagem" rows="4"
+                            placeholder="Escreve a tua mensagem..."></textarea>
+                    </div>
+
+                    <div class="d-grid">
+                        <button type="submit" class="btn btn-outline-light rounded-pill py-2">Enviar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-QNVX3bNUe0/ri1vyNwMZec8eZ14xgsy2DRZ9ZAw6g8N9Lgkz2vTqV0O1QK4dqITJ"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>
