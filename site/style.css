@@ -15,6 +15,91 @@
     text-align: center; /* opcional, mas ajuda no alinhamento */
 }
 
+/* Fundo com overlay mais escuro */
+.pt-0contatos {
+    position: relative;
+    background-image: url('imagens/pexels-jeremy-bishop-1260133-20146347 2.png');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+}
+
+.pt-0contatos::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+    backdrop-filter: blur(1.5px);
+}
+
+/* Form + texto lado a lado */
+.conteudo-contato {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 90px;
+    align-items: center;
+    position: relative;
+    top: 50px;
+}
+
+/* Texto da direita */
+.texto-direita {
+    max-width: 420px;
+    text-align: center;
+    color: #fff;
+    z-index: 2;
+    font-family: 'Jura', sans-serif;
+}
+
+.frase {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.autor {
+    font-size: 18px;
+    opacity: .8;
+}
+
+/* POPUP */
+.popup-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.55);
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.popup-content {
+    background: #ffffff;
+    width: 750px;
+    height: 200px;
+    border-radius: 35px;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.popup-text {
+    font-size: 24px;
+    font-family: 'Jura', sans-serif;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+.popup-btn {
+    width: 300px;
+    height: 65px;
+    background: #75B9FF;
+    border-radius: 40px;
+    border: none;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+}
+
 
 /* Define a imagem de fundo para todo o corpo da página */
 .pt-0 {
@@ -36,7 +121,6 @@
     background-repeat: no-repeat;
     color: white;
     min-height: 100vh;
-    /* ocupa toda a altura da viewport */
     display: flex;
     flex-direction: column;
 }
@@ -51,63 +135,72 @@ body {
   font-family: bold;
 }
 
-.form-control {
-  background-color: #fff;
-  border: none;
-  padding: 50%px;
+.custom-form {
+    width: 470px;
+    height: auto;
+    background: #000;
+    border-radius: 30px;
+    padding: 40px;
+    margin-top: 100px;
+    margin-left: 150px;
 }
 
-.form-control:focus {
-  box-shadow: none;
-  border: 1px solid #ccc;
+.text-form {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Jura', sans-serif;
 }
 
-.form-box {
-    width: 467px;
-    height: 700px;
-    background-color: black; /* quadrado preto */
-    border-radius: 30px;     /* bordas arredondadas */
-    position: absolute;      /* para usar top/left */
-    top: 207px;
-    left: 187px;
-    opacity: 1;              /* totalmente visível */
-    transform: rotate(0deg); /* ângulo, opcional aqui */
+.retangulo-style {
+    height: 76px;
+    border-radius: 15px;
+    font-size: 18px;
 }
 
-/* Faz a navbar aparecer sobre a imagem */
-header {
-    position: relative;
-    z-index: 2;
+.mensagem-style {
+    height: 160px;
+    border-radius: 15px;
+    font-size: 18px;
 }
 
-/* Adiciona algum contraste à navbar, se necessário */
-.nav-masthead .nav-link {
-    color: black;
-    /* deixa os links visíveis sobre a imagem */
+.btn-enviar{
+    font-family: 'Jura', sans-serif;
+    font-size: 25px;
+    margin: 35px;
+    background-color: #000;  
+    color: #fff;             
+    border: 3px solid #fff;
 }
 
-/* Mantém navbar sobre a imagem */
+.navbar {
+    height: 70px;
+    margin-top: 39px;
+    margin-left: 60px;
+    margin-right: 60px;
+    background-color: transparent !important;
+}
+
+.navbar-brand img {
+    height: 60px;
+}
+
 .navbar {
     background-color: transparent; /* transparente */
     padding: 1rem 0;
 }
 
-/* Links pretos sobre a imagem */
 .navbar .nav-link {
-    font-family: 'Jura', sans-serif; /* fonte */
-    font-weight: 700;                /* negrito */
-    font-size: 25px;                 /* tamanho */
-    letter-spacing: 0;               /* sem espaçamento extra */
-    color: black;                    /* preto sobre a imagem */
-    margin-left: 20px;               /* espaço entre os links */
+    font-family: 'Jura', sans-serif; 
+    font-weight: 700;              
+    font-size: 25px;                       
+    color: black;                   
+    margin-left: 25px;               
 }
 
-/* Hover dos links */
-.navbar .nav-link:hover {
-    color: #555;
+.nav-link:hover {
+    color: #ccc !important;
 }
 
-/* Ícone do hambúrguer (mobile) */
 .navbar-toggler {
     border-color: black;
 }
