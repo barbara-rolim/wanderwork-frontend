@@ -1,6 +1,182 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Jura:wght@300..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
+
+/* Locais */
+.pt-0local{
+    background-image: url('imagens/locais.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    min-height: 100vh;
+    /* ocupa toda a altura da viewport */
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0,0,0,0.6);
+    background-blend-mode: saturation;
+    opacity: 85%;
+}
+
+.form-card {
+    width: 466px;
+    height: 642px;
+    background-color: rgba(217, 217, 217, 1);
+    border-radius: 35px;
+    padding: 120px 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-card label {
+    font-size: 25px;
+    font-weight: 700;
+    font-style: bold;
+    font-weight: 700px;
+    color: black;
+    font-family: 'Jura',sans-serif;
+    padding: 15px;
+}
+
+.form-select {
+    width: 345px;
+    height:76px;
+    border-radius: 15px;
+    font-weight: 700;
+    font-style: bold;
+    font-weight: 700px;
+    color: black;
+    font-family: 'Jura',sans-serif;
+    font-size: 25px;
+}
+
+.btn-ver {
+    margin-top: 60px;
+    width: 345px;
+    height: 76px;
+    background-color: rgba(104, 105, 49, 1);
+    font-size: 25px;
+    border-radius: 15px;
+    align-self: center;
+    cursor: hand;
+    font-size: 25px;
+    font-style: bold;
+    font-weight: 700;
+    color: black;
+    font-family: 'Jura',sans-serif;
+}
+
+.info-box {
+    background-color: black;
+    border-radius: 30px;
+    padding: 25px;
+    width: 80%;
+    color: white !important;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.51); 
+    font-size: 25px;
+    font-style: bold;
+    font-weight: 700px;
+    color: black;
+    font-family: 'Jura',sans-serif;
+    margin-top: 5%;
+    width: 466px;
+}
+
+.map-box{
+  width: 466px;
+  height: 363px;
+  border-radius: 10px;
+  margin-top: -40%;
+}
+
+/* Acomodacoes */
+.pt-0acomodacao {
+    background-image: url('imagens/acomodacao.png');
+    background-size: cover;
+    background-position: 0% 18% ;
+    min-height: 68vh;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+}
+
+.faixa-text {
+    background: rgba(11, 17,17, 0.8);
+    padding: 25px 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.faixa-title {
+    font-family: 'Josefin Slab', sans-serif;
+    font-size: 80px;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 1);
+}
+
+.sec-cards {
+    background-color: rgba(180, 155, 44, 0.25);
+    padding-bottom: 80px;/*nao consegui colocar o padding aqui para descer mais a cor*/
+}
+
+.card-ride {
+    width: 100%;
+    max-width: 574px;
+    background: rgba(217,217,217,1) !important;
+    border-radius: 35px 35px !important;
+    margin-bottom: 60px;
+}
+
+.card-ride img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+    width: 100%;
+    max-width: 533.35px;
+    height: 288px;
+    border-radius: 35px 35px;
+    margin-top: 15px;
+}
+
+.card-ride .card-title {
+    font-family: 'Jura', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    margin-top:-20px;
+    padding: 15px;
+}
+
+.price {
+    font-family: 'Jura', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.card-list {
+    font-family: 'Jura', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+
+/* Info link */
+.card-link {
+    display: block;
+    font-family: 'Jura', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #000;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.card-link:hover {
+    text-decoration: underline;
+}
+
  /* Contatos */
 .pt-0contatos {
     background-image: url('imagens/pexels-jeremy-bishop-1260133-20146347 2.png');
@@ -22,7 +198,7 @@
     border-radius: 30px;
     padding: 40px;
     margin-top: 50px;
-    margin-left: 100px;
+    min-height: 50vh;
 }
 
 .text-form {
@@ -61,8 +237,6 @@
     color: #fff;
     font-family: 'Jura', sans-serif;
     margin-top: 20%; 
-    margin-right: -30%;
-
 }
 
 .frase {
@@ -96,8 +270,9 @@
 
 body {
   font-family: 'JURA', sans-serif;
-  font-size: 20px;
+  font-size: 25px;
   font-family: bold;
+  height: 700px;
 }
 
 .navbar {
@@ -201,7 +376,6 @@ body {
     background-size: cover;
     background-position: center;
     min-height: 50vh;
-
     background-color: black;
 }
 
@@ -293,13 +467,12 @@ body {
     background-color: black;
     background-size: cover;
     background-position: center;
-    min-height: 40vh;
+    min-height: 30vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-/* separação de containers internos */
 .footer-text h3{
     align-items: center;
     text-align: center;
@@ -308,7 +481,7 @@ body {
     font-size: 30px;
     font-weight: bold;
     margin-top: 10px;
-    transform: translateY(-30px);
+    padding-bottom: 10px;
 }
 
 .footer-buttons{
@@ -316,19 +489,6 @@ body {
     justify-content: center;
     align-items: center;
     gap: 1;
-}
-
-.footer-buttons .btn img {
-    width: 58px;
-    height: 57px;
-    object-fit: cover;
-    transform: translateY(-20px);
-}
-
-.footer-buttons .btn {
-    border: none;
-    background: transparent;
-    transition: transform 0.3s ease;
 }
 
 .footer-buttons .btn:hover {
@@ -341,6 +501,5 @@ body {
     color: white;
     font-family: 'Jura', sans-serif;
     font-size: 15px;
-    margin-top: 5px;
-    transform: translateY(15px);
+    margin-top: 25px;
 }
