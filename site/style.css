@@ -1,138 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Jura:wght@300..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
-.pt-0 h1 {
-    background-size: cover;
-    background-position: center;
-    min-height: 100vh;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: 'Josefin Slab', serif; /* fonte correta */
-    font-size: 85px;
-    font-weight: bold;
-    text-align: center; /* opcional, mas ajuda no alinhamento */
-}
-
-/* Fundo com overlay mais escuro */
+ /* Contatos */
 .pt-0contatos {
-    position: relative;
     background-image: url('imagens/pexels-jeremy-bishop-1260133-20146347 2.png');
     background-size: cover;
     background-position: center;
     min-height: 100vh;
-}
-
-.pt-0contatos::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.45);
-    backdrop-filter: blur(1.5px);
-}
-
-/* Form + texto lado a lado */
-.conteudo-contato {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    padding: 0 90px;
-    align-items: center;
-    position: relative;
-    top: 50px;
-}
-
-/* Texto da direita */
-.texto-direita {
-    max-width: 420px;
-    text-align: center;
-    color: #fff;
-    z-index: 2;
-    font-family: 'Jura', sans-serif;
-}
-
-.frase {
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
-.autor {
-    font-size: 18px;
-    opacity: .8;
-}
-
-/* POPUP */
-.popup-overlay {
-    display: none;
-    position: fixed;
-    inset: 0;
-    background: rgba(0,0,0,0.55);
-    justify-content: center;
-    align-items: center;
-    z-index: 9999;
-}
-
-.popup-content {
-    background: #ffffff;
-    width: 750px;
-    height: 200px;
-    border-radius: 35px;
-    text-align: center;
-    padding: 40px 20px;
-}
-
-.popup-text {
-    font-size: 24px;
-    font-family: 'Jura', sans-serif;
-    margin-bottom: 20px;
-    color: #000;
-}
-
-.popup-btn {
-    width: 300px;
-    height: 65px;
-    background: #75B9FF;
-    border-radius: 40px;
-    border: none;
-    font-size: 20px;
-    color: #fff;
-    cursor: pointer;
-}
-
-
-/* Define a imagem de fundo para todo o corpo da página */
-.pt-0 {
-    background-image: url('imagens/livingaround.png');
-    background-size: cover;
-    background-position: center;
     background-repeat: no-repeat;
-    color: white;
-    min-height: 100vh;
     /* ocupa toda a altura da viewport */
     display: flex;
     flex-direction: column;
-}
-
-.pt-0contatos {
-    background-image: url('imagens/pexels-jeremy-bishop-1260133-20146347\ 2.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    color: white;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-}
-
-.contato-page .navbar .nav-link {
-    color: white !important; /* letras brancas */
-}
-
-body {
-  font-family: 'JURA', sans-serif;
-  font-size: 20px;
-  font-family: bold;
+    background-color: rgba(0,0,0,0.4);
+    background-blend-mode: saturation;
 }
 
 .custom-form {
@@ -141,8 +21,8 @@ body {
     background: #000;
     border-radius: 30px;
     padding: 40px;
-    margin-top: 100px;
-    margin-left: 150px;
+    margin-top: 50px;
+    margin-left: 100px;
 }
 
 .text-form {
@@ -170,6 +50,54 @@ body {
     background-color: #000;  
     color: #fff;             
     border: 3px solid #fff;
+}
+
+
+.texto-direita {
+    min-height: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: #fff;
+    font-family: 'Jura', sans-serif;
+    margin-top: 20%; 
+    margin-right: -30%;
+
+}
+
+.frase {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.autor {
+    font-size: 18px;
+    text-align: right; 
+}
+
+.contato-page .navbar .nav-link {
+    color: white !important; /* letras brancas */
+}
+
+ /* Fim-Contatos */
+
+/* Define a imagem de fundo para todo o corpo da página */
+.pt-0 {
+    background-image: url('imagens/livingaround.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    min-height: 100vh;
+    /* ocupa toda a altura da viewport */
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+  font-family: 'JURA', sans-serif;
+  font-size: 20px;
+  font-family: bold;
 }
 
 .navbar {
@@ -209,6 +137,19 @@ body {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='black' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/ %3e%3c/svg%3e");
 }
 
+.pt-0 h1 {
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Josefin Slab', serif; /* fonte correta */
+    font-size: 85px;
+    font-weight: bold;
+    text-align: center; /* opcional, mas ajuda no alinhamento */
+}
 
 .pt-2 {
     background-color: rgba(180, 155, 44, 0.25);
