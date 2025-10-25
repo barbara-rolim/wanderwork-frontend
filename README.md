@@ -32,7 +32,7 @@ O layout base do projeto está disponível no link abaixo:
 ## 🔗 Deploy da Página
 
 Acesse o resultado publicado no GitHub Pages:  
-👉 https://barbara-rolim.github.io/wanderwork-frontend
+👉 https://barbara-rolim.github.io/wanderwork-frontend/index.html
 
 ---
 
