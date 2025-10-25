@@ -25,14 +25,13 @@ O layout base do projeto está disponível no link abaixo:
 - HTML5
 - CSS3
 - Bootstrap 5
-- (Opcional) JavaScript
 
 ---
 
 ## 🔗 Deploy da Página
 
 Acesse o resultado publicado no GitHub Pages:  
-👉 https://barbara-rolim.github.io/wanderwork-frontend/index.html
+👉 https://barbara-rolim.github.io/wanderwork-frontend
 
 ---
 
